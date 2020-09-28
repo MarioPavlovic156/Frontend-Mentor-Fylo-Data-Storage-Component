@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: relative; top: 80px; color: #fff;}
+    .attribution a { color: #fff; }
+  </style>
+</head>
+<body id="body">
+
+  <div id="wrapper">
+    <div class="fylo_div">
+      <div class="fylo_div_logo">
+        <img class="logo" src="images\logo.svg" alt="fylo-logo">
+      </div>
+      <div class="fylo_div_icons">
+        <div class="icons">
+          <img class="document" src="images/icon-document.svg" alt="icon-document">
+        </div>
+        <div class="icons">
+          <img class="folder" src="images/icon-folder.svg" alt="icon-folder">
+        </div>
+        <div class="icons">
+          <img class="upload" src="images/icon-upload.svg" alt="icon-upload">
+        </div>
+      </div>
+    </div>
+    <div class="info_div">
+      <div class="info_div_gb_left">
+        <p class="gb">185 <span class="gb_left">GB LEFT</span></p>
+      </div>
+      <div id="info_div_triangle">
+
+      </div>
+      <div class="info_div_text">
+        <div class="storage_info">
+          You’ve used <span>815 GB</span> of your storage
+        </div>
+        <div class="meter">
+          <span id="meter_bar" class="meter_bar"></span>
+        </div>
+        <div class="min_max">
+          <div>
+            0 GB
+          </div>
+          <div>
+            1000 GB
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/MarioPavlovic156">Mario Pavlović</a>.
+  </div> 
+
+  
+  
+  <script>
+
+    setTimeout(function(){
+      const animationBar = document.getElementById('meter_bar');
+      animationBar.style.width = '75%'
+      animationBar.style.transition = 'width ease-out .5s';
+    }, 250);
+
+  </script>
+</body>
+</html>
+
+
+        
+        

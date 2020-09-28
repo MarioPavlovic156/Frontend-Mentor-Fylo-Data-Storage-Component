@@ -1,0 +1,243 @@
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    Font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+span, .min_max {
+    color: hsl(243, 100%, 93%);
+    font-weight: bolder;
+}
+
+#wrapper {
+    display: flex;
+    position: relative;
+}
+
+.fylo_div, .info_div {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.fylo_div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-top-right-radius: 150px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px 100px 25px 25px;
+    margin-right: 50px;
+}
+
+.logo {
+    transform: translate(22px);
+}
+
+.fylo_div_icons {
+    display: flex;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.icons {
+    border-radius: 10px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 15px;
+}
+
+.document {
+    transform: translate(6px, 2.5px);
+}
+
+.folder {
+    transform: translate(2.8px, 6.5px);
+}
+
+.upload {
+    transform: translate(4px, 8.5px);
+}
+
+.info_div {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 170px;
+    height: 100px;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+}
+
+.info_div_gb_left {
+    background-color: #fff;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    top: -35px;
+    padding: 10px 40px;
+}
+
+.gb {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(229, 57%, 11%);
+}
+
+.gb_left {
+    color: hsl(229, 7%, 55%);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: -8px;
+}
+
+.info_div_text {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0, -35px);
+}
+
+.min_max {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.storage_info, .storage_bar, .min_max {
+    padding: 10px;
+}
+
+.storage_info {
+    color: hsl(243, 100%, 93%);
+}
+
+#info_div_triangle {
+    border: none;
+    background: #fff;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    top: 18px;
+    right: 25px;
+}
+
+.meter {
+    position: relative;
+    height: 12px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 25px;
+    padding: 2px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+#meter_bar {
+    width: 0%;
+}
+
+.meter > .meter_bar {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ffa399, #ff9092, #ff7b90, #ff6591, #ff4d97);
+    position: relative;
+}
+
+
+@media only screen and (max-width: 980px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+    }
+    
+    #wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #info_div_triangle {
+        background: none;
+    }
+
+
+    .fylo_div {
+        margin: 0;
+        padding: 50px 0;
+        min-width: 410px;
+    }
+
+    .fylo_div_icons {
+        padding: 0;
+        margin-left: 30px;
+    }
+
+    .fylo_div_logo {
+        margin-left: 21px;
+    }
+
+    .info_div {
+        width: 80vw;
+        margin-top: 20px;
+        
+    }
+
+    .info_div_gb_left {
+        border-radius: 15px;
+        position: relative;
+        right: 32%;
+        top: 130px;
+    }
+
+    .storage_info {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 820px) {
+    .info_div_gb_left {
+        right: 32%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .info_div_gb_left {
+        right: 30%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .info_div_gb_left {
+        right: 28%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .info_div_gb_left {
+        right: 20%;
+    }
+}
+
+
+
